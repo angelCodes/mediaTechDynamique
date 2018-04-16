@@ -9,6 +9,11 @@ class Users extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->model('user');
     }
+
+    public function index()
+    {
+         redirect('users/login');
+    }
     
     /*
      * User account information
